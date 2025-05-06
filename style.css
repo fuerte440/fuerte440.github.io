@@ -139,6 +139,7 @@ section h2 {
   align-items: center;
   justify-content: center;
   text-align: center;
+  text-decoration: none;
 }
 
 
@@ -239,7 +240,6 @@ footer {
 }
 
 /* RESPONSIVE */
-
 @media (max-width: 345px) {
   body {
     font-size: 0.85rem;
@@ -261,7 +261,11 @@ footer {
     font-size: 0.85rem;
     padding: 0.5rem 1rem;
   }
-
+  .redes-botones {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
   .redes-botones a {
     font-size: 0.85rem;
     padding: 0.5rem 1rem;
