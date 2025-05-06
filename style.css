@@ -242,12 +242,13 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 489px) {
   .redes-botones {
-    display: flex;
+    /* display: flex; */
     flex-direction: row; /* iconos en línea */
     gap: 12px;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    flex-wrap: nowrap;
   }
 
   .redes-botones a {
@@ -299,13 +300,14 @@ footer {
     padding: 0.5rem 1rem;
   }
   .redes-botones {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 1rem;
+    display: flex;
   }
   .redes-botones a {
     font-size: 0.85rem;
-    padding: 0.5rem 1rem;
+    /* padding: 0.5rem 1rem; */
   }
   .proyecto p {
   font-size: 0.75rem;
