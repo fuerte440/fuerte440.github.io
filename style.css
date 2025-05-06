@@ -53,7 +53,8 @@ header h1 {
 
 /* SECCIONES */
 section {
-  background-color: #000000; /* Gris oscuro */
+  background-color: #ffffff; /* Gris oscuro */
+  COLOR: black;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -63,7 +64,7 @@ section h2 {
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #ffffff; /* Azul claro */
+  color: #a7a7a7; /* Azul claro */
   border-bottom: 2px solid #334155; /* Gris medio */
   padding-bottom: 0.5rem;
 }
@@ -72,7 +73,7 @@ section h2 {
 ul {
   list-style-type: disc;
   margin-left: 1.5rem;
-  color: #ffffff; /* Gris claro */
+  color: #000000; /* Gris claro */
 }
 
 li {
