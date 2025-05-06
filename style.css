@@ -77,9 +77,14 @@ li {
 }
 
 /* REDES */
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 .redes a {
-  display: inline-block;
-  margin: 0.5rem 1rem 0 0;
   padding: 0.6rem 1.2rem;
   background-color: #0f172a;
   color: #f1f5f9;
@@ -94,6 +99,7 @@ li {
   background-color: #38bdf8;
   color: #0f172a;
 }
+
 
 
 
