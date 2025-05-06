@@ -1,47 +1,77 @@
-body {
+/* RESET Y FUENTE */
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #1e1e2f;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header, section, footer {
-  padding: 2rem;
+.container {
   text-align: center;
+  max-width: 800px;
+  padding: 2rem;
 }
 
+/* ENCABEZADO */
 header h1 {
+  font-size: 3rem;
+  font-weight: 700;
   margin-bottom: 0.5rem;
-  font-size: 2.5rem;
+  color: #38bdf8;
 }
 
-section p {
+header p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  color: #cbd5e1;
+}
+
+/* CUERPO */
+.intro {
+  margin: 2rem 0;
+  font-size: 1rem;
+  color: #94a3b8;
+}
+
+/* ENLACES */
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .links a {
-  display: inline-block;
-  margin: 0.5rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  color: #fff;
-  background-color: #007acc;
+  background-color: #1e293b;
+  color: #f1f5f9;
   text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .links a:hover {
-  background-color: #005f99;
+  background-color: #38bdf8;
+  color: #0f172a;
+  border-color: #38bdf8;
 }
 
+/* FOOTER */
 footer {
-  margin-top: auto;
-  font-size: 0.9rem;
-  background-color: #111;
-  color: #ccc;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: #64748b;
 }
