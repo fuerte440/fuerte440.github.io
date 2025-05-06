@@ -93,5 +93,14 @@
     // Mostrar el primer slide al cargar
     mostrarSlide(indiceActual);
   </script>
+  <script>
+  const boton = document.getElementById('toggleSobreMi');
+  const contenido = document.getElementById('contenidoSobreMi');
+
+  boton.addEventListener('click', () => {
+    contenido.classList.toggle('mostrar');
+    boton.classList.toggle('rotada');
+  });
+</script>
 </body>
 </html>
