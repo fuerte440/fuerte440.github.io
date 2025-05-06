@@ -134,7 +134,13 @@ section h2 {
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
 }
+
 
 .proyecto-btn:hover,
 .proyecto-btn:focus {
@@ -239,4 +245,33 @@ footer {
     align-items: center;
     gap: 1rem;
   }
+@media (max-width: 345px) {
+  body {
+    font-size: 0.85rem;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .subtitulo {
+    font-size: 0.95rem;
+  }
+
+  section h2 {
+    font-size: 1rem;
+  }
+
+  .proyecto-btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .redes-botones a {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+  
 }
