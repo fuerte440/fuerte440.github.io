@@ -79,7 +79,7 @@ header h1 {
 
 /* SECCIONES */
 section {
-  border: 2px solid #acb0b5;
+  border: 1px solid #acb0b5;
   border-radius: 12px;
   background-color: #ffffff;
   padding: 1.5rem;
@@ -91,7 +91,7 @@ section h2 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   color: #3d4249;
-  border-bottom: 2px solid #d1d2d3d9;
+  border-bottom: 1px solid #d1d2d3d9;
   padding-bottom: 0.5rem;
   text-transform: uppercase;
 }
@@ -169,7 +169,7 @@ li {
   gap: 0.6rem;
   padding: 0.6rem 1.2rem;
   background-color: #f3f3f3;
-  border: 2px solid #acb0b5;
+  border: 1px solid #acb0b5;
   border-radius: 999px;
   color: #3d4249;
   text-decoration: none;
