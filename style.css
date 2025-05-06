@@ -1,9 +1,7 @@
-
-
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #ffffff; /* Negro profundo */
-  color: #ffffff; /* Blanco */
+  background-color: #ffffff;
+  color: #000000;
   min-height: 100vh;
   padding: 2rem;
   line-height: 1.6;
@@ -30,19 +28,18 @@ header {
   height: 140px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #dcdce0; /* Azul claro */
-  margin-bottom: 1rem;
+  border: 4px solid #dcdce0;
 }
 
 header h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #adb6ba; /* Azul claro */
+  color: #adb6ba;
 }
 
 .subtitulo {
   font-size: 1.1rem;
-  color: #cbd5e1; /* Gris suave */
+  color: #abb7c5;
   margin-top: 0.25rem;
 }
 
@@ -50,9 +47,8 @@ header h1 {
 section {
   border: 2px solid #000000;
   border-radius: 12px;
-  background-color: #ffffff; /* Gris oscuro */
-  padding: 2rem;
-  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 1rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -60,17 +56,16 @@ section h2 {
   text-align: center;
   font-size: 1.4rem;
   margin-bottom: 1rem;
-  color: #000000; /* Azul claro */
-  border-bottom: 2px solid #334155; /* Gris medio */
+  color: #000000;
+  border-bottom: 2px solid #334155;
   padding-bottom: 0.5rem;
-   text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 /* LISTAS */
 ul {
   list-style-type: disc;
-  margin-left: 1.5rem;
-  color: #ffffff; /* Gris claro */
+  color: #000000;
 }
 
 li {
@@ -83,13 +78,14 @@ li {
   justify-content: center;
   gap: 2rem;
   margin-top: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .redes-botones a {
   padding: 0.8rem 1.6rem;
-  background-color: #ffffff; /* Negro profundo */
-  color: #000000; /* Blanco */
-  border: 2px solid #000000; /* Azul claro */
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
   border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
@@ -97,11 +93,14 @@ li {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  width: 80px; /* Fuerza el mismo ancho para todos */
+  justify-content: center; /* Centra el icono y texto */
+  text-align: center;
 }
 
 .redes-botones a:hover {
-  background-color: #38bdf8; /* Azul claro */
-  color: #111827; /* Negro profundo */
+  background-color: #8f8f8f;
+  color: #111827;
 }
 
 .redes-botones i {
@@ -112,43 +111,15 @@ li {
 footer {
   text-align: center;
   font-size: 0.85rem;
-  color: #64748b; /* Gris suave */
-  margin-top: 1rem;
-}
-/* Redes: menú desplegable */
-#menu-toggle {
-  display: none;
-  background: #0f172a;
-  color: #38bdf8;
-  border: 2px solid #38bdf8;
-  border-radius: 12px;
-  padding: 0.6rem 1rem;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
-#menu-redes {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  color: #64748b;
   margin-top: 1rem;
 }
 
+/* RESPONSIVE: Apilar botones en móviles */
 @media (max-width: 470px) {
-  #menu-redes {
-    display: none;
+  .redes-botones {
     flex-direction: column;
-    gap: 1rem;
     align-items: center;
-    margin-top: 1rem;
-  }
-
-  #menu-toggle {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .redes-botones.show #menu-redes {
-    display: flex;
+    gap: 1rem;
   }
 }
