@@ -80,18 +80,14 @@ li {
 }
 
 /* REDES */
-.redes {
-  text-align: center;
-  margin-top: 1.5rem;
-}
-
 .redes-botones {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
+  margin-top: 1.5rem;
 }
 
-.redes a {
+.redes-botones a {
   padding: 0.8rem 1.6rem;
   background-color: #0f172a;
   color: #f1f5f9;
@@ -105,22 +101,15 @@ li {
   gap: 0.5rem;
 }
 
-.redes a:hover {
+.redes-botones a:hover {
   background-color: #38bdf8;
   color: #0f172a;
 }
 
-.redes i {
+.redes-botones i {
   font-size: 1.5rem;
 }
 
-/* FOOTER */
-footer {
-  text-align: center;
-  font-size: 0.85rem;
-  color: #64748b;
-  margin-top: 3rem;
-}
 /* FOOTER */
 footer {
   text-align: center;
