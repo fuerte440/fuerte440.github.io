@@ -81,10 +81,14 @@ li {
 
 /* REDES */
 .redes {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.redes-botones {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin-top: 1.5rem;
 }
 
 .redes a {
