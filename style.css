@@ -121,3 +121,40 @@ footer {
   color: #64748b; /* Gris suave */
   margin-top: 1rem;
 }
+/* Redes: menú desplegable */
+#menu-toggle {
+  display: none;
+  background: #0f172a;
+  color: #38bdf8;
+  border: 2px solid #38bdf8;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#menu-redes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 470px) {
+  #menu-redes {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  #menu-toggle {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .redes-botones.show #menu-redes {
+    display: flex;
+  }
+}
