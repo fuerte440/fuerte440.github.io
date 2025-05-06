@@ -240,7 +240,7 @@ footer {
 }
 
 /* RESPONSIVE */
-@media (max-width: 345px) {
+@media (max-width: 450px) {
   body {
     font-size: 0.85rem;
   }
