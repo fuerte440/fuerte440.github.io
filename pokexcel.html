@@ -47,11 +47,11 @@
      <section class="sobre-mi">
   <h2>
   Características principales
-    <button id="toggleSobreMi" class="flecha-btn">
+     <button class="flecha-btn" data-target="contenidoCaracteristicas">
       <i class="fas fa-chevron-down"></i>
     </button>
   </h2>
-  <div id="contenidoSobreMi" class="contenido-desplegable">
+  <div id="contenidoCaracteristicas" class="contenido-desplegable">
  <ul>
         <li>🎴 Añadir cartas manualmente o por escaneo.</li>
         <li>📂 Crear listas personalizadas basadas en colecciones oficiales.</li>
@@ -65,11 +65,11 @@
   <section class="sobre-mi">
   <h2>
    Tecnologías utilizadas
-    <button id="toggleSobreMi" class="flecha-btn">
+       <button class="flecha-btn" data-target="contenidoTecnologias">
       <i class="fas fa-chevron-down"></i>
     </button>
   </h2>
-  <div id="contenidoSobreMi" class="contenido-desplegable">
+  <div id="contenidoTecnologias" class="contenido-desplegable">
  <ul>
         <li>Android Studio (Java y Kotlin)</li>
         <li>SQLite + Apache POI</li>
@@ -113,5 +113,26 @@
     boton.classList.toggle('rotada');
   });
 </script>
+  <script>
+  document.querySelectorAll('.flecha-btn').forEach(boton => {
+    boton.addEventListener('click', () => {
+      const targetId = boton.getAttribute('data-target');
+      const contenido = document.getElementById(targetId);
+      contenido.classList.toggle('mostrar');
+      boton.classList.toggle('rotada');
+    });
+  });
+</script>
+<script>
+  document.querySelectorAll('.flecha-btn').forEach(boton => {
+    boton.addEventListener('click', () => {
+      const targetId = boton.getAttribute('data-target');
+      const contenido = document.getElementById(targetId);
+      contenido.classList.toggle('mostrar');
+      boton.classList.toggle('rotada');
+    });
+  });
+</script>
+
 </body>
 </html>
