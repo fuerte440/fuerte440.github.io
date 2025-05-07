@@ -55,7 +55,7 @@
 }
 .prev,
 .next {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgb(206 206 206);
   border: none;
   color: white;
   width: 40px;
