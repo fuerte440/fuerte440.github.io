@@ -47,7 +47,7 @@
      <section class="sobre-mi">
   <h2>
   Características principales
-     <button class="flecha-btn" data-target="contenidoCaracteristicas">
+     <button  id="togleCaracteristicas" class="flecha-btn">
       <i class="fas fa-chevron-down"></i>
     </button>
   </h2>
@@ -65,7 +65,7 @@
   <section class="sobre-mi">
   <h2>
    Tecnologías utilizadas
-       <button class="flecha-btn" data-target="contenidoTecnologias">
+       <button id="togleTecnologias" class="flecha-btn" >
       <i class="fas fa-chevron-down"></i>
     </button>
   </h2>
@@ -113,24 +113,22 @@
     boton.classList.toggle('rotada');
   });
 </script>
-  <script>
-  document.querySelectorAll('.flecha-btn').forEach(boton => {
-    boton.addEventListener('click', () => {
-      const targetId = boton.getAttribute('data-target');
-      const contenido = document.getElementById(targetId);
-      contenido.classList.toggle('mostrar');
-      boton.classList.toggle('rotada');
-    });
+ <script>
+  const boton = document.getElementById('toggleCaracteristicas');
+  const contenido = document.getElementById('contenidoCaracteristicas');
+
+  boton.addEventListener('click', () => {
+    contenido.classList.toggle('mostrar');
+    boton.classList.toggle('rotada');
   });
 </script>
-<script>
-  document.querySelectorAll('.flecha-btn').forEach(boton => {
-    boton.addEventListener('click', () => {
-      const targetId = boton.getAttribute('data-target');
-      const contenido = document.getElementById(targetId);
-      contenido.classList.toggle('mostrar');
-      boton.classList.toggle('rotada');
-    });
+ <script>
+  const boton = document.getElementById('toggleTecnologias');
+  const contenido = document.getElementById('contenidoTecnologias');
+
+  boton.addEventListener('click', () => {
+    contenido.classList.toggle('mostrar');
+    boton.classList.toggle('rotada');
   });
 </script>
 
