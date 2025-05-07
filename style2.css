@@ -58,8 +58,8 @@
   background-color: rgb(206 206 206);
   border: none;
   color: white;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   font-size: 20px;
   cursor: pointer;
   border-radius: 50%;
@@ -69,6 +69,7 @@
   transition: background-color 0.3s ease;
   margin: 10px auto;
 }
+
 
 .prev:hover,
 .next:hover {
