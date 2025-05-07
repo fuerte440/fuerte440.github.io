@@ -15,15 +15,15 @@
       <h1>Pokexcel</h1>
       <p class="subtitulo">Tu colección Pokémon organizada, digital y exportable</p>
     </header>
-    <section class="sobre-mi">
+ <section class="sobre-mi">
   <h2>
-   ¿Qué es Pokexcel?
-    <button id="toggleSobreMi" class="flecha-btn">
+    ¿Qué es Pokexcel?
+    <button class="flecha-btn" data-target="contenidoSobreMi">
       <i class="fas fa-chevron-down"></i>
     </button>
   </h2>
   <div id="contenidoSobreMi" class="contenido-desplegable">
-     <p>Pokexcell es una aplicación Android que permite a los usuarios gestionar sus colecciones de cartas Pokémon de forma digital. Desde la creación de listas personalizadas hasta la exportación a Excel y escaneo inteligente, Pokexcell combina diseño, funcionalidad e inteligencia para los coleccionistas modernos.</p>
+    <p>Pokexcell es una aplicación Android que permite a los usuarios gestionar sus colecciones de cartas Pokémon...</p>
   </div>
 </section>
 
@@ -44,15 +44,15 @@
           <button class="next" onclick="moverSlide(1)">❯</button>
     </section>
   
-     <section class="sobre-mi">
+<section class="sobre-mi">
   <h2>
-  Características principales
-     <button  id="toggleCaracteristicas" class="flecha-btn">
+    Características principales
+    <button class="flecha-btn" data-target="contenidoCaracteristicas">
       <i class="fas fa-chevron-down"></i>
     </button>
   </h2>
   <div id="contenidoCaracteristicas" class="contenido-desplegable">
- <ul>
+    <ul>
         <li>🎴 Añadir cartas manualmente o por escaneo.</li>
         <li>📂 Crear listas personalizadas basadas en colecciones oficiales.</li>
         <li>📊 Exportar tus listas a archivos Excel (.xlsx) para compartir o imprimir.</li>
@@ -62,15 +62,15 @@
       </ul>
   </div>
 </section>
-  <section class="sobre-mi">
+<section class="sobre-mi">
   <h2>
-   Tecnologías utilizadas
-       <button id="toggleTecnologias" class="flecha-btn" >
+    Tecnologías utilizadas
+    <button class="flecha-btn" data-target="contenidoTecnologias">
       <i class="fas fa-chevron-down"></i>
     </button>
   </h2>
   <div id="contenidoTecnologias" class="contenido-desplegable">
- <ul>
+    <ul>
         <li>Android Studio (Java y Kotlin)</li>
         <li>SQLite + Apache POI</li>
         <li>SoundPool y Camera API</li>
@@ -104,33 +104,17 @@
     // Mostrar el primer slide al cargar
     mostrarSlide(indiceActual);
   </script>
-  <script>
-  const boton = document.getElementById('toggleSobreMi');
-  const contenido = document.getElementById('contenidoSobreMi');
-
-  boton.addEventListener('click', () => {
-    contenido.classList.toggle('mostrar');
-    boton.classList.toggle('rotada');
+<script>
+  document.querySelectorAll('.flecha-btn').forEach(boton => {
+    boton.addEventListener('click', () => {
+      const targetId = boton.getAttribute('data-target');
+      const contenido = document.getElementById(targetId);
+      contenido.classList.toggle('mostrar');
+      boton.classList.toggle('rotada');
+    });
   });
 </script>
- <script>
-  const boton = document.getElementById('toggleCaracteristicas');
-  const contenido = document.getElementById('contenidoCaracteristicas');
 
-  boton.addEventListener('click', () => {
-    contenido.classList.toggle('mostrar');
-    boton.classList.toggle('rotada');
-  });
-</script>
- <script>
-  const boton = document.getElementById('toggleTecnologias');
-  const contenido = document.getElementById('contenidoTecnologias');
-
-  boton.addEventListener('click', () => {
-    contenido.classList.toggle('mostrar');
-    boton.classList.toggle('rotada');
-  });
-</script>
 
 </body>
 </html>
