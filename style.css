@@ -202,6 +202,22 @@ footer {
   color: #64748b;
   margin-top: 2rem;
 }
+footer a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #2c3e50; /* Fondo oscuro */
+  color: #ffffff; /* Texto blanco */
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+footer a:hover {
+  background-color: #34495e;
+  transform: scale(1.05);
+}
 
 /* ICONOS PERSONALIZADOS */
 .icono-img {
