@@ -277,7 +277,8 @@ footer a:hover {
 }
 
 .cv-btn:hover {
-  background-color: #0056b3;
+  background-color: #6a6a6a;
+   transform: scale(1.15);
 }
 .nota-cv {
   font-size: 0.9em;
