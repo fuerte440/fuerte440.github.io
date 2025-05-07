@@ -43,9 +43,16 @@
       </div>
           <button class="next" onclick="moverSlide(1)">❯</button>
     </section>
-    <section class="proyectos">
-      <h2>Características principales</h2>
-      <ul>
+  
+     <section class="sobre-mi">
+  <h2>
+  Características principales
+    <button id="toggleSobreMi" class="flecha-btn">
+      <i class="fas fa-chevron-down"></i>
+    </button>
+  </h2>
+  <div id="contenidoSobreMi" class="contenido-desplegable">
+ <ul>
         <li>🎴 Añadir cartas manualmente o por escaneo.</li>
         <li>📂 Crear listas personalizadas basadas en colecciones oficiales.</li>
         <li>📊 Exportar tus listas a archivos Excel (.xlsx) para compartir o imprimir.</li>
@@ -53,7 +60,8 @@
         <li>📷 Integración con la cámara del dispositivo.</li>
         <li>📡 APIs externas como Cardmarket o eBay (en desarrollo).</li>
       </ul>
-    </section>
+  </div>
+</section>
   <section class="sobre-mi">
   <h2>
    Tecnologías utilizadas
