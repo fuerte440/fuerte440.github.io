@@ -22,17 +22,29 @@
 }
 
 .slider button {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   border: none;
   color: white;
-  padding: 2px 9px;
+  width: 40px;
+  height: 40px;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 18px;
+  top: 100%; /* Justo debajo del slider */
+  left: 50%;
+  transform: translate(-50%, 10px);
+  font-size: 20px;
   cursor: pointer;
-  border-radius: 14px;
+  border-radius: 50%; /* Hace que el botón sea redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
 }
+
+.slider button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 
 .slider .prev {
   left: 0;
