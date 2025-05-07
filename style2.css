@@ -22,7 +22,7 @@
 }
 
 .slider button {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgb(31 31 31);
   border: none;
   color: white;
   width: 40px;
@@ -42,7 +42,7 @@
 }
 
 .slider button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color:  rgb(165 165 165);
 }
 
 
