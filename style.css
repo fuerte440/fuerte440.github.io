@@ -217,7 +217,6 @@ footer a {
 }
 
 footer a:hover {
-  background-color: #34495e;
   transform: scale(1.15);
 }
 
