@@ -238,6 +238,28 @@ footer {
 .flecha-btn.rotada {
   transform: rotate(180deg);
 }
+.scroll-down {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.scroll-down button {
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #333;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
 
 /* RESPONSIVE */
 @media (max-width: 489px) {
