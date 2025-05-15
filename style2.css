@@ -46,17 +46,14 @@
   background-color:  rgb(165 165 165);
 }
 .slider-descripcion {
-  background-color: #80c0ff96;
+  background-color: #0081ff94;
   text-align: center;
   font-size: 0.9rem;
-  border-radius: 10px; /* <--- valor correcto */
+  border-radius: 55px; /* <--- valor correcto */
   margin-top: 10px;
   padding: 10px; /* recomendable para que el texto no quede pegado al borde */
 }
 
-    .descripcion {
-      display: none;
-    }
     .descripcion.activa {
       display: block;
     }
