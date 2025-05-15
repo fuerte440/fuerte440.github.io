@@ -8,6 +8,19 @@
   <link rel="stylesheet" href="style2.css">
   <link rel="icon" type="image/png" href="assets/pokeball.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+  <style>
+    .slider-descripcion {
+      text-align: center;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+    .descripcion {
+      display: none;
+    }
+    .descripcion.activa {
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -15,19 +28,20 @@
       <h1>Pokexcel</h1>
       <p class="subtitulo">Tu colección Pokémon organizada, digital y exportable.</p>
     </header>
- <section class="sobre-mi">
-  <h2>
-    ¿Qué es Pokexcel?
-    <button class="flecha-btn" data-target="contenidoSobreMi">
-      <i class="fas fa-chevron-down"></i>
-    </button>
-  </h2>
-  <div id="contenidoSobreMi" class="contenido-desplegable">
-    <p>
-  Pokexcel es una aplicación Android desarrollada con Kotlin y pensada para coleccionistas de cartas Pokémon. Permite gestionar y digitalizar colecciones de forma intuitiva, añadiendo cartas manualmente o escaneándolas con la cámara del dispositivo. El usuario puede crear listas personalizadas por expansión, marcar cartas repetidas y exportar sus listas a Excel para llevar un control ordenado o compartirlas fácilmente. La app incluye funcionalidades como inicio de sesión seguro, integración con bases de datos locales (SQLite), y en el futuro se integrará con APIs externas como eBay o Cardmarket para estimar el valor de las cartas. Pokexcel es ideal tanto para coleccionistas novatos como para expertos que quieran mantener su colección siempre actualizada desde el móvil.
-    </p>
-  </div>
-</section>
+
+    <section class="sobre-mi">
+      <h2>
+        ¿Qué es Pokexcel?
+        <button class="flecha-btn" data-target="contenidoSobreMi">
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </h2>
+      <div id="contenidoSobreMi" class="contenido-desplegable">
+        <p>
+          Pokexcel es una aplicación Android desarrollada con Kotlin y pensada para coleccionistas de cartas Pokémon...
+        </p>
+      </div>
+    </section>
 
     <section class="proyectos">
       <h2>Capturas de pantalla</h2>
@@ -39,48 +53,58 @@
           <img src="assets/captura4.png" alt="Captura 4" class="slide">
           <img src="assets/captura5.png" alt="Captura 5" class="slide">
           <img src="assets/captura6.png" alt="Captura 6" class="slide">
-          <img src="assets/captura7.png" alt="Captura 6" class="slide">
+          <img src="assets/captura7.png" alt="Captura 7" class="slide">
         </div>
-      </div> 
-         <button class="prev" onclick="moverSlide(-1)">❮</button>
-         <button class="next" onclick="moverSlide(1)">❯</button>
+        <div class="slider-descripcion">
+          <p class="descripcion activa">Pantalla principal de la app con estadísticas resumidas.</p>
+          <p class="descripcion">Interfaz para añadir cartas manualmente.</p>
+          <p class="descripcion">Lista personalizada con colección de cartas.</p>
+          <p class="descripcion">Exportación de colección a Excel.</p>
+          <p class="descripcion">Inicio de sesión con cuenta de Google.</p>
+          <p class="descripcion">Función de escaneo por cámara en prueba.</p>
+          <p class="descripcion">Vista detallada de una carta registrada.</p>
+        </div>
+      </div>
+      <button class="prev" onclick="moverSlide(-1)">❮</button>
+      <button class="next" onclick="moverSlide(1)">❯</button>
     </section>
-  
-<section class="sobre-mi">
-  <h2>
-    Funciones principales
-    <button class="flecha-btn" data-target="contenidoCaracteristicas">
-      <i class="fas fa-chevron-down"></i>
-    </button>
-  </h2>
-  <div id="contenidoCaracteristicas" class="contenido-desplegable">
-    <ul>
-      <li>🎴 Añadir cartas manualmente y por escaneo (función en desarrollo con margen de mejora).</li>
-      <li>📂 Crear listas personalizadas basadas en colecciones oficiales.</li>
-      <li>📊 Exportar listas a archivos Excel (.xlsx) para compartir o imprimir.</li>
-      <li>🔒 Inicio de sesión con cuenta propia o mediante Google (autenticación segura).</li>
-      <li>📷 Uso de la cámara para capturar el número de carta (detección básica implementada).</li>
-      <li>📡 Integración futura con APIs externas como Cardmarket o eBay (no disponible aún).</li>
-    </ul>
 
-  </div>
-</section>
-<section class="sobre-mi">
-  <h2>
-    Tecnologías utilizadas
-    <button class="flecha-btn" data-target="contenidoTecnologias">
-      <i class="fas fa-chevron-down"></i>
-    </button>
-  </h2>
-  <div id="contenidoTecnologias" class="contenido-desplegable">
-    <ul>
-        <li>Android Studio (Java y Kotlin).</li>
-        <li>SQLite + Apache POI.</li>
-        <li>SoundPool y Camera API.</li>
-        <li>Firebase Authenticatio.</li>
-      </ul>
-  </div>
-</section>
+    <section class="sobre-mi">
+      <h2>
+        Funciones principales
+        <button class="flecha-btn" data-target="contenidoCaracteristicas">
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </h2>
+      <div id="contenidoCaracteristicas" class="contenido-desplegable">
+        <ul>
+          <li>🎴 Añadir cartas manualmente y por escaneo (función en desarrollo).</li>
+          <li>📂 Crear listas personalizadas basadas en colecciones oficiales.</li>
+          <li>📊 Exportar listas a archivos Excel (.xlsx).</li>
+          <li>🔒 Inicio de sesión con cuenta propia o mediante Google.</li>
+          <li>📷 Uso de la cámara para capturar el número de carta.</li>
+          <li>📡 Integración futura con APIs como Cardmarket o eBay.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sobre-mi">
+      <h2>
+        Tecnologías utilizadas
+        <button class="flecha-btn" data-target="contenidoTecnologias">
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </h2>
+      <div id="contenidoTecnologias" class="contenido-desplegable">
+        <ul>
+          <li>Android Studio (Java y Kotlin).</li>
+          <li>SQLite + Apache POI.</li>
+          <li>SoundPool y Camera API.</li>
+          <li>Firebase Authentication.</li>
+        </ul>
+      </div>
+    </section>
+
     <footer>
       <a href="index.html">Volver</a><br>
       © 2025 Samuel Fuertes Salas. samuelfuertessalas@gmail.com.
@@ -90,10 +114,14 @@
   <script>
     let indiceActual = 0;
     const slides = document.querySelectorAll('.slide');
+    const descripciones = document.querySelectorAll('.descripcion');
 
     function mostrarSlide(indice) {
       slides.forEach((slide, i) => {
         slide.classList.toggle('activo', i === indice);
+      });
+      descripciones.forEach((desc, i) => {
+        desc.classList.toggle('activa', i === indice);
       });
     }
 
@@ -107,17 +135,16 @@
     // Mostrar el primer slide al cargar
     mostrarSlide(indiceActual);
   </script>
-<script>
-  document.querySelectorAll('.flecha-btn').forEach(boton => {
-    boton.addEventListener('click', () => {
-      const targetId = boton.getAttribute('data-target');
-      const contenido = document.getElementById(targetId);
-      contenido.classList.toggle('mostrar');
-      boton.classList.toggle('rotada');
+
+  <script>
+    document.querySelectorAll('.flecha-btn').forEach(boton => {
+      boton.addEventListener('click', () => {
+        const targetId = boton.getAttribute('data-target');
+        const contenido = document.getElementById(targetId);
+        contenido.classList.toggle('mostrar');
+        boton.classList.toggle('rotada');
+      });
     });
-  });
-</script>
-
-
+  </script>
 </body>
 </html>
