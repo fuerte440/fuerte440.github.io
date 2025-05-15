@@ -45,21 +45,17 @@
 .slider button:hover {
   background-color:  rgb(165 165 165);
 }
-.slide {
-  display: none;
-  text-align: center;
-}
-
-.slide.activo {
-  display: block;
-}
-
-.texto-slide {
-  font-size: 1rem;
-  margin-top: 10px;
-  color: #333;
-}
-
+  .slider-descripcion {
+      text-align: center;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+    .descripcion {
+      display: none;
+    }
+    .descripcion.activa {
+      display: block;
+    }
 
 .slider .prev {
   left: 0;
