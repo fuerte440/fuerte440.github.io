@@ -45,11 +45,15 @@
 .slider button:hover {
   background-color:  rgb(165 165 165);
 }
-  .slider-descripcion {
-      text-align: center;
-      font-size: 1rem;
-      margin-top: 10px;
-    }
+.slider-descripcion {
+  background-color: #80c0ff96;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 10px; /* <--- valor correcto */
+  margin-top: 10px;
+  padding: 10px; /* recomendable para que el texto no quede pegado al borde */
+}
+
     .descripcion {
       display: none;
     }
