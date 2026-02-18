@@ -1,89 +1,277 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Samuel Fuertes - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png"" href="assets/pokeball.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
-
-  <script src="https://kit.fontawesome.com/a2e0e6fa5a.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Fuertes | Portfolio Backend & Ciberseguridad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/pokeball.png">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <div class="container">
     <header>
-      <img src="assets/foto.png" alt="Foto de Samuel Fuertes" class="perfil">
-      <h1>Samuel Fuertes Salas</h1>
-      <p class="subtitulo">Full Stack Developer — Soluciones inteligentes con visión futura</p>
-  <a href="assets/cv_samuel_fuertes.pdf" download class="cv-btn">
-    <i class="fas fa-download"></i> Descargar Currículum
-  </a>
-    <p class="nota-cv">Formato PDF – actualizado en febrero de 2026</p>
-<!-- Redes sociales -->
-<div class="redes-botones">
-  <a href="https://fuerte440.github.io/" target="_blank">
-    <img src="assets/github.jpg" alt="GitHub" class="icono-img">
-    <span class="texto-red">GitHub</span>
-  </a>
-  <a href="" target="_blank">
-    <img src="assets/instagram.png" alt="Instagram" class="icono-img">
-    <span class="texto-red">Instagram</span>
-  </a>
-  <a href="https://www.linkedin.com/feed/" target="_blank">
-    <img src="assets/linkedin.png" alt="LinkedIn" class="icono-img">
-    <span class="texto-red">LinkedIn</span>
-  </a>
-</div>
-
+        <nav>
+            <div class="nav-brand">SFS</div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#sobre-mi">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><button class="theme-btn" onclick="toggleTheme()">🌓</button></li>
+            </ul>
+        </nav>
     </header>
- <section class="sobre-mi">
-  <h2>
-    Sobre mí
-    <button id="toggleSobreMi" class="flecha-btn">
-      <i class="fas fa-chevron-down"></i>
-    </button>
-  </h2>
-  <div id="contenidoSobreMi" class="contenido-desplegable">
-    <p>Desarrollador Full Stack con especialización en Android (Kotlin). Apasionado por crear soluciones móviles escalables, accesibles e inteligentes. Actualmente ampliando conocimientos en Big Data, IA y Drupal para apps avanzadas.</p>
-  </div>
+
+    <main>
+        <section id="sobre-mi" class="hero fade-in">
+            <div class="hero-content">
+                <h1>Samuel Fuertes Salas</h1>
+                <p class="role">Backend Developer & Cybersecurity</p>
+                <p>
+                    Desarrollador Backend especializado en <strong>Drupal</strong>. Aporto una sólida base técnica adquirida en la administración pública (AST) 
+                    combinada con más de 10 años de experiencia en gestión operativa y logística. Perfil polivalente enfocado en la seguridad de los sistemas.
+                </p>
+                
+                <div class="hero-buttons">
+                    <div class="social-row">
+                        <a href="https://github.com/fuerte440" target="_blank" class="social-btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/samuel-fuertes-salas" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                    <a href="assets/cv_samuel_fuertes.pdf" download class="cv-download">
+                        <i class="fas fa-file-download"></i> Descargar CV
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/foto.png" alt="Samuel Fuertes">
+            </div>
+        </section>
+
+   <section id="proyectos" class="fade-in">
+    <h2 class="section-title">Proyectos Principales</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="assets/pokexcel.png" alt="Pokexcel Android App" class="project-image-img">
+            <div class="project-content">
+                <h3>Pokexcel - Android App</h3>
+                <p class="project-description">
+                    Desarrollé una aplicación de Pokemon para poder mantener ordenadas mis colecciones pokemon, además de tener un albúm virtual el cual te permite ver las caltas faltantes pertenecientes a esa colección, editar esas colecciones y exportarlas.
+                </p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Kotlin</span>
+                    <span class="tech-tag">SQLite</span>
+                    <span class="tech-tag">Android SDK</span>
+                    <span class="tech-tag">RecyclerView</span>
+                    <span class="tech-tag">Enterprise Data Sync</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/fuerte440/mi_proyecto_congelado/tree/master" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> Ver Código
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/AST.jpg" alt="Modernización y Optimización Integral del Portal AST." class="project-image-img">
+            <div class="project-content">
+                <h3>Modernización & Optimización Integral del Portal web AST.</h3>
+                
+                <p class="project-description">
+    Durante mi etapa asumí la responsabilidad técnica íntegra de la actualización del sitio corporativo. Actuando como único desarrollador del proyecto, gestioné de forma autónoma desde la optimización del rendimiento hasta la implementación de mejoras de SEO y rediseño de secciones críticas.                </p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Drupal 8</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MariaDB</span>
+                    <span class="tech-tag">Twigs & Theme hijo</span>
+
+                </div>
+                <div class="project-links">
+                    <a href="https://ast.aragon.es/" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i> Ver Web
+                    </a>
+                </div>
+            </div>
+        </div>
+
+   <div class="project-card">
+    <img src="assets/cyber.png" alt="Pentesting & Auditoría" class="project-image-img">
+    <div class="project-content">
+        <h3>Pentesting & Bastionado de Sistemas</h3>
+        <p class="project-description">
+            Especialización en seguridad ofensiva y defensiva. He desarrollado laboratorios de <strong>Hacking Ético</strong> realizando explotación de vulnerabilidades con <strong>Metasploit</strong> en entornos controlados y configurado infraestructuras seguras mediante <strong>servidores RADIUS</strong> (FreeRADIUS) para autenticación WiFi Enterprise. Aplico técnicas de <strong>Análisis Forense</strong> (FTK Imager/RAM) y auditorías de <strong>Hardening</strong> para robustecer sistemas Linux.
+        </p>
+        <div class="tech-tags">
+            <span class="tech-tag">Metasploit</span>
+            <span class="tech-tag">Nmap</span>
+            <span class="tech-tag">Wireshark</span>
+            <span class="tech-tag">FreeRADIUS</span>
+            <span class="tech-tag">Kali Linux</span>
+        </div>
+        <div class="project-links">
+            <a href="Fuertes_Salas_Samuel_HE03.pdf" target="_blank" class="project-link">
+                <i class="fas fa-file-pdf"></i> Ver Auditoría HE
+            </a>
+            <a href="Fuertes_Salas_Samuel_BRS04_Tarea.pdf" target="_blank" class="project-link">
+                <i class="fas fa-file-pdf"></i> Ver Proyecto RADIUS
+            </a>
+        </div>
+    </div>
+</div>
 </section>
 
+        <section id="habilidades" class="fade-in">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fab fa-drupal"></i> Drupal Skills</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item"><i class="fas fa-microchip"></i> Twig & Engine</li>
+                        <li class="skill-item"><i class="fas fa-sitemap"></i> Taxonomías & Themes Hijos</li>
+                        <li class="skill-item"><i class="fas fa-children"></i>Versiones utilizadas de drupal 8,10 y 11</li>
+                        <li class="skill-item"><i class="fas fa-building-columns"></i> Creación de Web en instituciones Públicas</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend & CMS</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item"><i class="fab fa-php"></i> PHP / Java / Kotlin</li>
+                        <li class="skill-item"><i class="fab fa-python"></i> Scripts Python</li>
+                        <li class="skill-item"><i class="fab fa-wordpress"></i> WordPress</li>
+                        <li class="skill-item"><i class="fas fa-search"></i> SEO Técnico</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-desktop"></i> Frontend</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item"><i class="fab fa-html5"></i> HTML5 & CSS3</li>
+                        <li class="skill-item"><i class="fab fa-js"></i> JS Básico</li>
+                        <li class="skill-item"><i class="fas fa-mobile-screen"></i> Responsive</li>
+                        <li class="skill-item"><i class="fas fa-palette"></i> Canva</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-shield-halved"></i> Ciberseguridad</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item"><i class="fas fa-biohazard"></i> Kali Linux</li>
+                        <li class="skill-item"><i class="fas fa-network-wired"></i> Wireshark</li>
+                        <li class="skill-item"><i class="fas fa-memory"></i> Volatility / FTK</li>
+                        <li class="skill-item"><i class="fas fa-terminal"></i> Bash Scripting</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-toolbox"></i> Herramientas & B.D</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item"><i class="fas fa-code"></i> VS Code &  VS Studio</li>
+                        <li class="skill-item"><i class="fab fa-git-alt"></i> Git & GitHub</li>
+                        <li class="skill-item"><i class="fab fa-docker"></i> Docker Desktop</li>
+                        <li class="skill-item"><i class="fas fa-users"></i> MySQL & MariaDB & MongoDB & SQLite</li>
+                    </ul>
+                </div>
+                  <div class="skill-category">
+                    <h3><i class="fas fa-toolbox"></i> Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item"><i class="fas fa-code"></i>Adaptabilidad</li>
+                        <li class="skill-item"><i class="fas fa-users"></i>Trabajo en equipo</li>
+                        <li class="skill-item"><i class="fas fa-code"></i>Resolición de problemas</li>
+                        <li class="skill-item"><i class="fas fa-code"></i>Entornos exigentes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-  <section class="proyectos">
-  <h2>Proyectos Personales</h2>
-  <div class="proyecto">
-    <a href="https://fuerte440.github.io/pokexcel.html" class="proyecto-btn">App Android (2025)</a>
-      <p>Envío por Gmail, Base de datos SQLite, gestión de listas, exportación a Excel y detección de repetidas.</p>
-  </div>
-  <div class="proyecto">
-    <button class="proyecto-btn"> AST (2025)</button>
-    <p>Sección "Trabaja con nosotros" en Drupal: creación de contenidos y tablas de empleo + Drupal 9.
-</p>
-  </div>
-  <div class="proyecto">
-       <a href="https://fuerte440.github.io/jaspersoft.html" class="proyecto-btn">Sistema de gestión de usuarios (2024)</a>
-    <p>Java + JasperSoft + seguridad de acceso.</p>
-  </div>
+    <section id="experiencia" class="fade-in">
+    <h2 class="section-title">Trayectoria Profesional</h2>
+    <div class="timeline">
+        
+        <div class="timeline-item">
+            <h3>Fullstack Developer | Proyectos Propios & Freelance</h3>
+            <div class="timeline-meta">Junio 2025 - Actualidad</div>
+            <p>Desarrollo y despliegue de soluciones web integrales con enfoque en la eficiencia técnica:</p>
+            <ul class="skill-list">
+                <li><strong>Virtualización y DevOps:</strong> Despliegue de entornos mediante Docker utilizando contenedores independientes para Drupal y MariaDB, asegurando aislamiento y escalabilidad del sistema.</li>
+                <li><strong>Desarrollo de Software:</strong> Programación de módulos personalizados en PHP para la gestión dinámica de estilos CSS y la automatización de funcionalidades específicas del CMS.</li>
+                <li><strong>Administración de Datos:</strong> Gestión avanzada de bases de datos MariaDB, incluyendo el diseño de estructuras de tablas y la ejecución de políticas de seguridad y copias de seguridad.</li>
+            </ul>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Web Developer / Backend | Aragonesa de Servicios Telemáticos (AST)</h3>
+            <div class="timeline-meta">Septiembre 2024 - Junio 2025</div>
+            <p>Mantenimiento y evolución de la infraestructura web para la administración pública de Aragón:</p>
+            <ul class="skill-list">
+                <li><strong>Arquitectura de Contenidos:</strong> Configuración avanzada de tipos de contenido, campos personalizados, taxonomías y creación de estructuras visuales complejas mediante Views y Blocks.</li>
+                <li><strong>Desarrollo de Funcionalidades:</strong> Implementación de soluciones a medida mediante PHP y gestión avanzada de formularios corporativos mediante el uso de Webform.</li>
+                <li><strong>Soporte y Mantenimiento:</strong> Resolución de incidencias técnicas, actualización de contenidos críticos y colaboración directa con departamentos internos como Recursos Humanos.</li>
+            </ul>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Responsable de Logística y Operativa | Sector Industrial y Eventos</h3>
+            <div class="timeline-meta">2012 - 2024</div>
+            <p>Liderazgo de equipos y gestión de sistemas complejos en entornos de alta responsabilidad:</p>
+            <ul class="skill-list">
+                <li><strong>Gestión de Grandes Eventos:</strong> Jefe de barra y responsable logístico en festivales de escala nacional (Sonorama, MadCool, Fiestas del Pilar), coordinando recursos y personal bajo alta presión.</li>
+                <li><strong>Optimización de Sistemas (OC):</strong> Formación oficial como Operario Corrector en Mercadona para la resolución de fallos críticos en sistemas PPG y supervisión de la entrada de material.</li>
+                <li><strong>Control Administrativo Industrial:</strong> Gestión integral del ciclo logístico mediante el uso avanzado de SAP para la creación de albaranes, entradas de mercancía y control de stock.</li>
+            </ul>
+        </div>
+    </div>
 </section>
-
-
+    </main>
+<section id="contacto" class="fade-in">
+    <h2 class="section-title">Contacto</h2>
+    
+    <div class="email-section">
+        <div class="email-container">
+            <i class="fas fa-envelope email-icon-input"></i>
+            <input type="text" id="emailInput" value="samuelfuertessalas@gmail.com" readonly class="email-input">
+            <button onclick="sendEmail()" class="email-btn send-btn" title="Enviar email">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+            <button onclick="copyEmail()" class="email-btn copy-btn" title="Copiar email">
+                <i class="fas fa-copy"></i>
+            </button>
+        </div>
+    </div>
+    <div class="contact-grid">
+        <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-info">
+                <div class="contact-label">Teléfono</div>
+                <a href="tel:+34666555444">+34 691 59 05 15</a>
+            </div>
+        </div>
+        <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-info">
+                <div class="contact-label">Ubicación</div>
+                <span>Zaragoza, España</span>
+            </div>
+        </div>
+        <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div class="contact-info">
+                <div class="contact-label">LinkedIn</div>
+                <a href="https://www.linkedin.com/in/samuel-fuertes-salas" target="_blank">Samuel Fuertes</a>
+            </div>
+        </div>
+    </div>
+</section>
     <footer>
-      © 2025 Samuel Fuertes Salas. samuelfuertessalas@gmail.com.
+        <p>© 2026 Samuel Fuertes Salas | Zaragoza, España</p>
     </footer>
-  </div>
 
-  
-<script>
-  const boton = document.getElementById('toggleSobreMi');
-  const contenido = document.getElementById('contenidoSobreMi');
-
-  boton.addEventListener('click', () => {
-    contenido.classList.toggle('mostrar');
-    boton.classList.toggle('rotada');
-  });
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
